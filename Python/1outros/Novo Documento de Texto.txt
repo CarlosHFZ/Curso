@@ -1,0 +1,56 @@
+
+
+x = y ( comparação )
+
+x <> y ( Diferente )
+
+x > y ( maior )
+
+x < y ( menor )
+
+x >= ( maior ou igual )
+
+x <= ( menor ou igual )
+
+
+
+x <- 1
+y <- 2
+
+
+
+x = y e x > 10
+
+x = y e x > 10 ou y > x
+
+
+
+1 - escreva um programa que solicite ao usuario um numero
+    e escreva na tela se esse numero é impe ou per
+
+
+
+1 - perguntar nome do usuario
+2 - perguntar o sexo do usuario
+4 - perguntar a idade do usario
+5 - escrevar quantos anos faltam para o usuario
+    se aposentar levando em conta que se usuario for
+    homen a idade seja de 65, caso seja mulher a idade
+    seja 60
+
+
+
+
+1- esreva um codigo que solicite do usuario e  dois numeros
+em seguida escreva no tela o valor do maior numero.
+
+2 - escreva um codigo que solicite o nome e a senha do usuario,
+ em seguida solicite esses dados, se usuario e senha estiverem
+corretos altorize o acesso, senao informe o acesso foi negado. 
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+
+
+
+append: adiciona um item ao final da lista
+
+extend: adiciona uma lista a dentro da lista
+
+insert: indica aonde adicionar um item na lista
+
+remove: indique qual elemento remover
+
+pop: remove o ultimo elemento da lista ou qual vc indicar
+e o unico que consegue printar para mostrar qual elemento vc removeu
+
+clear: limpa a lista
+
+count: conta quantos elementos tem na lista
+
+sort: Organiza os elementos da lista
+      

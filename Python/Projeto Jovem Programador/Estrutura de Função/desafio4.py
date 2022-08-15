@@ -1,5 +1,5 @@
 
-def argumento(a):
+def argumento(a,b):
     if a > 0:
         print('P')
     else:

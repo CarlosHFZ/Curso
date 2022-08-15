@@ -1,0 +1,18 @@
+data1 = open('E_Cliente.txt','r')
+data2 = open('N_Cliente.txt','r')
+data3 = open('N_produtos.txt','r')
+data4 = open('V_produtos.txt','r')
+
+
+print('Esses são os clientes cadastrados até o momento')
+print('')
+print(f'Nome dos Clientes: \n{data2.read()}')
+print('')
+print(f'Email dos clientes: \n{data1.read()}')
+print('')
+print('Esses são os produtos cadastrados até o momento')
+print('')
+print(f'Nomes dos produtos: \n{data3.read()}')
+print('')
+print(f'Varlos dos produtos: \n{data4.read()}')
+print('')

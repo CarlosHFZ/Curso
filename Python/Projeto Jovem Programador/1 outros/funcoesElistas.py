@@ -28,6 +28,26 @@
 #     pass
 
 
+# def x(*arg):
+#     print(*arg)
+
+# x(1,2,3,4,5,6,7)
+
+
+# def x (**kwargs): #desconsidera o def para o codigo
+#     pass
+
+# def x(**kwargs):
+#     print(kwargs)
+
+
+# x(veiculo='carro', portas=4, vel_max=300)
+
+
+
+
+
+
 # listas = ['1','2']
 # sets = {'1','2','3','5'} #Embaralha os valores
 # dicionarios = {'id':'1'}

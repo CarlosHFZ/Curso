@@ -18,35 +18,32 @@ def main():
         print("")             
         match r:
             case "1":
-                while True:
-                    
                     nome = input('Nome do cliente: ')
                     numero = int(input('Numero da Conta: '))
                     saldo = float(input('Saldo Inicial: '))
                     dia = int(input('Dia do rendimento da conta: '))
                     limite = float(input('Limite do cliente: '))
-                    r = input('Para encerrar aperte ENTER: ')
+                    print("Cadastro concluido")
                     especial = ContaEspeçial(nome, numero, saldo, dia, limite)
                     print("") 
-                    if r == "":
-                        break
             case "2":
                 r = float(input('Digite o Valor a ser Depositado: '))
                 especial.deposito(r)
                 print("") 
             case "3":
-                r = float(input('Digite o Valor a ser Sacado: '))
-                especial.sacar(r)
-                r = input("deseja fazer saque especial? 1 para sim 2 para não")
-                print("") 
+                r = input("1 - Saque Normal\n2 - Saque Especial")
+                print("")
+                if r == "2":                 
+                    r = float(input('Digite o Valor a ser Sacado: '))
+                    especial.sacar(r)
                 if r == "1":
                     r = float(input('Digite o Valor a ser Sacado: '))
                     especial.Sacar_especial(r)
                     print("") 
             case "4":
-                print(f'Seu saldo de R${especial.saldo} foi para:')
+                print(f'Seu saldo de R${especial.saldo:.2f} foi para:')
                 especial.calcular()
-                print(f"Valor de R${especial.valor} rendido no dia {especial.dia}\nNovo saldo: R${especial.saldo}\nDivida: {especial.deve}")
+                print(f"Valor de R${especial.valor:.2f} rendido no dia {especial.dia}\nNovo saldo: R${especial.saldo:.2f}\nDivida: {especial.deve}")
                 print("") 
             case "5":
                 print(especial)

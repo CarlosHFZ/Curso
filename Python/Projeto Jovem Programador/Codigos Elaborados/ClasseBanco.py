@@ -16,20 +16,26 @@ class ContaPoupança(ContaBancaria):
     def __init__(self, cliente, n_conta, saldo, dia,):
         super().__init__(cliente, n_conta, saldo)
         self.dia = int(dia)
-        self.rendimento = 0.005
+        self.rendimento = 5
         self.valor = 0
     def calcular(self):
-        self.saldo += ((self.rendimento * self.saldo) - self.saldo)
-        self.valor = ((self.rendimento * self.saldo) - self.saldo) 
+        self.saldo += self.saldo*(self.rendimento/100)
+        self.valor = self.saldo*(self.rendimento/100)
     
 class ContaEspeçial(ContaPoupança):
     def __init__(self, cliente, n_conta, saldo, dia, limite):
         super().__init__(cliente, n_conta, saldo, dia)
         self.limite = float(limite)
     def Sacar_especial(self, valor):
-        self.limite -= float(valor)
-        self.deve += float(valor)
-        
+        if valor > self.saldo + self.limite or self.deve + valor > self.limite:
+            print(f"{self.cliente} seu saldo é insuficiente!")
+        else:
+            self.saldo -= valor
+            if valor > self.limte:
+                self.deve = self.limite
+            else:
+                self.deve += valor
+            
         
 
 

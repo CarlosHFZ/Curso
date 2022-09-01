@@ -48,6 +48,15 @@ while True:
         case "3":
             print(usuario)
         case "4":
+            r = input('Valor: ')
+            usuario.alterarValor(r)
+        case "5":
+            r = input('tipo: Gasolina\nDissel\nEtanol ')
+            usuario.alterarCombustivel(r)
+        case "6":
+            r = input('Quantidade: ')
+            usuario.alterarQuantidadeCombustivel(r)
+        case "0":
             exit()
         case _:
             print('Opção incorreta')

@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+  
+.superMain{
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(41, 41, 133, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    margin: 0 50px;
+    font-size: 50px;
+    color: rgb(101, 129, 180);
+}
+
+.links{
+    margin: 0 50px;
+}
+
+.links a{
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(120, 153, 215);
+    padding: 20px 0;
+}
+
+a:hover{
+    background-color: rgb(144, 144, 144);
+}
+
+@media screen and (max-width:720px){
+    .links{
+        display: none;
+    }
+}
+
+.superMain{
+    background-image: url(https://www.teahub.io/photos/full/323-3236804_hotel-transylvania-castle.jpg);
+    background-size: cover;
+}
+
+.endereco{
+    padding: 620px 10px 10px 10px;
+    font-size: 20px;
+    color: rgb(97, 97, 212);
+}
+
+.text{
+    padding: 620px 10px 10px 10px;
+    font-size: 20px;
+    color: rgb(97, 97, 212);
+}
+

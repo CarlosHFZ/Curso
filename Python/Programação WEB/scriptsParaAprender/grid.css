@@ -1,0 +1,116 @@
+/* GRID LAYOUT 
+RECURSO QUE PERMITE DESENVOLVER LAYOUTS EM GRID(grade)*/
+/*Trabalha com um conteiner que contem items
+Este Conteiner controla a disposição dos itens, mas eles tambem
+podem alterar o seu posicionamento */
+/*O grid Layout é dividido em colunas e linhas */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* .container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 50px auto 10%;*/ /*podemos colocar quantas colunas quisermos*/
+/*    height: 50vh;
+    grid-template-rows: 70% 30%;*/ /*podemos colocar quantas linhas quisermos*/
+/*    gap: 5px;*/  /*gap geral, possui gap tambem apenas para linhas e apenas para colunas*/
+/*} */
+/* .container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+} */
+
+
+/*Template area*/
+
+/* .container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    gap: 5px; */
+    /*grid-template-areas:*/ /*Cria areas especificas*/
+    /* 'header header header' */
+    /*'sidebar content content'*/ /* da para aumentar em quanto quiser*/
+    /* 'footer footer footer'; */
+/* } */
+/* .container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}*/
+/* #header{
+    grid-area: header;
+}
+#sideBar{
+    grid-area: sidebar;
+}
+#content{
+    grid-area: content;
+    height: 50vh;
+}
+#footer{
+    grid-area: footer;
+} */
+
+/* Alinhamento */
+
+/* .container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 40vh; */
+    /*horizontal*/
+    /* justify-content: center; */
+    /*Vertical*/
+    /* align-items:center; */
+/* } */
+/* .container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+} */
+
+/* Itens Individuais */
+/* .container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+} */
+/* #item-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#item-2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#item-3{
+    justify-self: end;
+    height: 200px;
+}
+#item-5{
+    justify-self: start;
+    height: 200px;
+}
+#item-4{
+    align-self: center;
+}
+#item-6{
+    align-self: end;
+} */

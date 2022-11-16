@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    border: 1px solid blue;
+}
+
+.superMain{
+    background-color: rgb(146, 228, 228);
+    padding-left: 300px;
+    padding-right: 300px;
+    
+    
+}
+.barra{
+    padding: 0 300px;
+    height: 19.35vh;
+    background-color: aquamarine;
+}
+.conteiner{
+    display: grid;
+    grid-template-areas: 
+    'h h h'
+    's s c'
+    's s c'
+    ;
+    height: 80vh;
+}
+
+
+#footer p{
+    padding: 20px;
+}
+#content{
+    display: flex;
+    align-items: flex-end;
+    
+}
+#content img{
+    height: 250px;
+    width: 300px;
+}
+.brainly img{
+    width: 170px;
+    height: 80px;
+
+}
+.botoes{
+    display: Flex;     
+    justify-content: space-between ;  
+    align-items: center;
+    font-size: 14px;
+}
+.botao{
+    margin: 0px 10px;
+}
+
+.title{
+    font-size: 90px;
+}
+
+.text{
+    margin-top: 80px;
+    margin-right: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    grid-area: h;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.pergunta{
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 14px;   
+}
+.pesquisa{
+    margin: 40px 40px 40px 40px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    height:16%;
+    width: 70%;
+}
+.pesquisa::placeholder{
+    color: rgba(rgb(69, 66, 66), rgb(93, 100, 93), rgb(75, 75, 80), 0.8);
+    padding: 20px;
+    font-size: 20px;   
+}
+
+#sideBar{
+    grid-area: s;
+    
+}
+#content{
+    grid-area: c; 
+ 
+}
+#footer{
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+    justify-content: space-around;
+}

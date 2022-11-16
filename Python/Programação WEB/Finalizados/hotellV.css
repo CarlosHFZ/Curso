@@ -7,10 +7,12 @@
 .superMain{
     width: 100%;
     height: 100vh;
+    flex-direction: column;
 }
 
 .header{
     width: 100%;
+    border-bottom: 2px solid rgb(120, 153, 215);
     height: 10%;
     background-color: rgba(41, 41, 133, 0.8);
     display: flex;
@@ -23,6 +25,18 @@
     height: 90%;
     display: flex;
     justify-content: space-between;
+}
+
+
+a{
+    text-decoration: none;
+    font-size:  20pc;
+    color: black;
+    height: fit-content;
+    padding: 15px 0px;
+}
+a:visited{
+    color: black;
 }
 
 .title{
@@ -44,7 +58,7 @@
 }
 
 a:hover{
-    background-color: rgb(144, 144, 144);
+    background-color: rgb(44, 124, 180);
 }
 
 @media screen and (max-width:720px){

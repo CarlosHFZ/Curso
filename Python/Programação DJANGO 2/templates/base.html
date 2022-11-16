@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block 'titulo'%}{%endblock%}</title>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <div class="esquerdo">
+                <div class="logo">
+                    <a href="/"></a>
+                    <img src="https://s2.glbimg.com/rQohSEpjy2CFEAqov4awvjqDR4c=/620x455/e.glbimg.com/og/ed/f/original/2020/03/27/jure-tovrljan-coronavirus-logos-grey_dezeen_2364_col_8.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="centro">
+
+            </div>    
+
+            <div class="direito">
+                <div class="buttonsD">
+                    <a href="/">HOME</a>
+                    <a href="/sobre">ABOUT</a>           
+                </div>
+            </div>              
+        </div>
+        <div id="algoC">
+            {%block 'conteudo'%}{%endblock%}
+        </div>
+        <div id="algoS">
+            {%block 'sidebar'%}{%endblock%}
+        </div>
+        <div id="algoF">
+            {%block 'footer'%}{%endblock%}
+        </div>
+    </div>
+   
+</body>
+</html>

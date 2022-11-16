@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.conteiner{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 20% 100px auto ;
+    grid-template-rows: 1;
+    grid-column-end: 2;
+    color: red;
+}

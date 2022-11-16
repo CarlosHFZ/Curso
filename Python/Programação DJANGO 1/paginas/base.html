@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block 'titulo'%}{%endblock%}</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            padding: 31px;
+            color:rgb(189, 151, 223);
+            text-decoration: none;
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        .header{
+            background-color: aquamarine;
+            height: 15vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+        }
+        .header button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            height: 10vh;
+            width: 8vh;
+            border-radius: 10px;
+            background-color: rgb(98, 98, 188);  
+        }
+        button:hover{
+            background-color: aquamarine;
+            transition: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">   
+        <button><a href="http://127.0.0.1:8000">HOME</a></button>
+        <button><a href="http://127.0.0.1:8000/produtos">Produtos</a></button>
+        <button><a href="http://127.0.0.1:8000/sobre">Sobre</a></button>
+    </div> 
+    {%block 'conteudo'%}{%endblock%}
+    {%block 'sidebar'%}{%endblock%}
+</body>
+</html>
